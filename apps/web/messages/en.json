@@ -2,10 +2,19 @@
   "header": {
     "logo": "Rettoria Saint Jude Thaddeus",
     "navigation": {
+      "home": "Home",
       "about": "About Us",
       "projects": "Projects",
       "donate": "Donations"
     }
+  },
+  "hero": {
+    "title": "I can do all things through Christ who strengthens me",
+    "subtitle": "Phil 4:13",
+    "button": "Read more"
+  },
+  "projects": {
+    "back": "Back to projects"
   },
   "footer": {
     "contacts": "Stay in touch with us",

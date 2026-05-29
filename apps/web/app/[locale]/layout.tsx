@@ -1,8 +1,8 @@
-import Footer from 'app/components/Footer';
-import Header from 'app/components/Header';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default async function LocaleLayout({
   children,
@@ -20,7 +20,7 @@ export default async function LocaleLayout({
     notFound();
   }
   return (
-    <NextIntlClientProvider messages={messages}>
+    <NextIntlClientProvider messages={messages} locale={locale}>
       <Header />
       <main>{children}</main>
       <Footer />

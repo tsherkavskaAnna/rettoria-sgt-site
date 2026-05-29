@@ -2,10 +2,19 @@
   "header": {
     "logo": "Rettoria San Giuda Taddeo",
     "navigation": {
+      "home": "Benvenuto",
       "about": "Chi siamo",
       "projects": "Progetti",
       "donate": "Donazioni"
     }
+  },
+  "hero": {
+    "title": "Tutto posso in Colui che mi dà la forza",
+    "subtitle": "Flp 4:13",
+    "button": "Leggi di più"
+  },
+  "projects": {
+    "back": "Torna ai progetti"
   },
   "footer": {
     "contacts": "Rimani in contatto con noi",
