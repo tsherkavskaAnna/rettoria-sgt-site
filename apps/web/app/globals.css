@@ -59,9 +59,36 @@ h6 {
     background-color: #e9e6e2;
   }
   .main-text {
-    color: #4a5663;
+    color: #4a4536;
   }
   .article-text {
     color: #fa8112;
+  }
+  .btn-back {
+    color: #988977;
+  }
+  .btn-primary {
+    background-color: #b7b7b7;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    padding: 0.65rem 1.5rem;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      transform 0.2s ease,
+      box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    will-change: transform;
+  }
+  .btn-primary:hover {
+    background-color: #f5f5f5;
+    color: #fa8112;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  .btn-primary:active {
+    transform: scale(0.97);
   }
 }

@@ -18,6 +18,13 @@ export default function NavigationMenu() {
   return (
     <nav className="flex flex-col gap-2 lg:flex-row lg:space-x-4">
       <Link
+        href={`/${locale}`}
+        onClick={closeMenu}
+        className={`${currentPage === 'home' ? 'underline-header' : ''} rounded-none py-2 text-lg font-semibold tracking-wide text-header-text transition-colors duration-300 hover:text-hover-header lg:px-4`}
+      >
+        {t('home')}
+      </Link>
+      <Link
         href={`/${locale}/news`}
         onClick={closeMenu}
         className={`${currentPage === 'news' ? 'underline-header' : ''} rounded-none py-2 text-lg font-semibold tracking-wide text-header-text transition-colors duration-300 hover:text-hover-header lg:px-4`}

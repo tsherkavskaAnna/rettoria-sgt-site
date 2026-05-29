@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <div className="fixed z-50 w-full bg-white">
       <Baner />
-      <div className="w-screen-2xl mx-auto flex flex-wrap items-center px-4 py-4 lg:px-10 justify-between">
+      <div className=" mx-auto flex flex-wrap items-center py-4  justify-between container">
         <div className="flex flex-nowrap items-center gap-2">
           <Link href={`/${locale}/`} className="flex items-center flex-nowrap">
             <Image
@@ -30,13 +30,13 @@ export default function Header() {
               height={56}
               className="mr-2 hidden md:block"
             />
-            <h1 className="py-2 text-xl md:text-3xl tracking-wide text-button sm:inline-block font-semibold">
+            <h1 className="py-2 pl-2 text-md md:text-xl xl:text-2xl tracking-wide text-button sm:inline-block font-semibold">
               {t('logo')}
             </h1>
           </Link>
         </div>
         {/* MOBILE: hamburger + switcher */}
-        <div className="flex items-center gap-4 lg:hidden">
+        <div className="flex items-center md:gap-4 lg:hidden">
           <button
             type="button"
             className="inline-flex items-center justify-center h-10 w-10 rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none"
@@ -56,7 +56,7 @@ export default function Header() {
 
       {/* MENU MOBILE/TABLET */}
       {navOpen && (
-        <div className="lg:hidden w-full bg-gray-50">
+        <div className="md:hidden w-full bg-gray-50">
           <ul className="flex flex-col items-center gap-4 py-4">
             <NavigationMenu />
           </ul>
